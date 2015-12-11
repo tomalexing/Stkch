@@ -1,0 +1,33 @@
+{# <!-- BEGIN header -->
+<header class="header">
+  <div class="header__left">
+    <a href="#intro" class="header__link">{{mixins.svgicon('circle')}}</a>
+  </div>
+
+  <div class="header__right">
+    {% include "_links.html" %}
+  </div>
+</header>
+<!-- END header --> #}
+
+
+<!-- begin header  -->
+<div class="header">
+	<div class="header__inner">
+		<div class="header__row">
+			<div class="header__logo">
+				<a href="/">{{mixing.svgicon('ionlogo')}}</a>
+			</div>
+			<div class="heeder__nav">
+				<ul class="nav">
+					<li class="nav__item"><a href="#">О нас</a></li>
+					<li class="nav__item"><a href="#">Как это работает</a></li>
+					<li class="nav__item"><a href="#">Пример урока</a></li>
+					<li class="nav__item"><a href="#">Курсы</a></li>
+				</ul>
+			</div>
+			 {{mixins.btnLink('СКАЧАТЬ ПРИЛОЖЕНИЕ', 'btn_blue', false ,'download')}}
+		</div>
+	</div>
+</div>
+<!-- end header -->
