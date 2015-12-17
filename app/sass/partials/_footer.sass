@@ -1,0 +1,53 @@
+.footer__block
+	z-index: 0
+	height: 224px+100px
+	.footer__learn
+		height: 224px
+		background: #fff radial-gradient(circle at 50% 50% ,white 15%,$red 15.7%,white 15%,white 30%,$red 30%,white 30.2%,white 45%,$red 46.0%,white 45.0%,white 60%,$red 61.0%,white 61%)
+	.footer__learn-in
+		min-width: 943px
+		width: percentage(943/1440)
+		display: flex
+		text-align: center
+		height: 100%
+		margin: auto
+		> *
+			flex: 1
+			justify-content: space-around
+			margin: auto
+		p
+			+f(l,28)
+		a
+			svg
+				height: 70px
+				width: 230px
+				display: inline-block
+	.footer__down
+		height: 100px
+		background-color: $footer
+		.footer__down-in
+			@extend %in
+		.copyright
+			float: left
+			+line-height(100)
+			+middle
+			color: #fff
+		.socials
+			float: right
+			+line-height(100)
+			+vertical
+			> *
+				width: 40px
+				height: 40px
+				border-radius: 50%
+				border: 3px solid #fff
+				vertical-align: middle
+				display: inline-block
+				margin-right: 17px
+				:hover
+					opacity: .5
+			svg
+				display: block
+				width: 2.3em
+				height: 2.3em
+

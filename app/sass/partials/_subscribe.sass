@@ -1,0 +1,52 @@
+.subscribe__block
+	z-index: 0
+	height: 524px
+	width: 100%
+	+g($orange-light, $orange-dark)
+	.subscribe__block-in
+		@extend %in
+		.title
+			padding-top: 70px
+			padding-bottom: 70px
+			width: 600px
+			margin: 0 auto
+			text-align: center
+			+f(l,36,1)
+			color: #fff
+		.input__field
+			max-width: 750px
+			width: percentage(750/1170)
+			height: 70px
+			border-radius: 14px
+			border: 1px solid $orange
+			margin: 0 auto
+			text-align: center
+			overflow: hidden
+			background: #fff
+			form
+				height: 100%
+				width: 100%
+				border-radius: 14px
+				font-size: 0
+				+clr
+			input
+				float: left
+				max-width: 680px
+				width: 90%
+				height: 100%
+				padding: 20px
+				+f(l,24,.7)
+			button
+				width:  50px
+				height: 100%
+				background: #fff
+				svg
+					height: 100%
+					width: 40px
+		.below
+			padding-top: 70px
+			width: 824px
+			margin: 0 auto
+			+f(l,20,.6)
+			color: #fff
+			text-align: center

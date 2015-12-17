@@ -50,9 +50,9 @@ gulp.task('sprite:svg', function() {
             cb();
         }))
         .pipe(cheerio({
-            run: function($, file) {
-                $('[fill]:not([fill="currentColor"])').removeAttr('fill');
-            },
+            // run: function($, file) {
+            //     $('[fill]:not([fill="currentColor"])').removeAttr('fill');
+            // },
             parserOptions: { xmlMode: true }
         }))
         .pipe(rename({ basename: 'sprite' }))

@@ -17,8 +17,10 @@
 {% macro btnLink(text, className, href, name) %}
 <a href="{% if href %}{{href}}{% else %}#{% endif %}"
   class="btn{% if className %} {{className}}{% endif %}">
+  <span class="btn__inner">
   {{svgicon(name)}}
   {{_btnInner(text)}}
+  </span>
 </a>
 {% endmacro %}
 

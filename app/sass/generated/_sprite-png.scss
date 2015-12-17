@@ -1,0 +1,462 @@
+$s-1: (
+  name: 's-1',
+  x: 0px,
+  y: 2520px,
+  offset-x: 0px,
+  offset-y: -2520px,
+  width: 624px,
+  height: 486px,
+  total-width: 624px,
+  total-height: 4254px,
+  image: '../img/sprite.png'
+);
+$s-2: (
+  name: 's-2',
+  x: 0px,
+  y: 1032px,
+  offset-x: 0px,
+  offset-y: -1032px,
+  width: 624px,
+  height: 486px,
+  total-width: 624px,
+  total-height: 4254px,
+  image: '../img/sprite.png'
+);
+$s-3: (
+  name: 's-3',
+  x: 0px,
+  y: 2024px,
+  offset-x: 0px,
+  offset-y: -2024px,
+  width: 624px,
+  height: 486px,
+  total-width: 624px,
+  total-height: 4254px,
+  image: '../img/sprite.png'
+);
+$s-4: (
+  name: 's-4',
+  x: 0px,
+  y: 1528px,
+  offset-x: 0px,
+  offset-y: -1528px,
+  width: 624px,
+  height: 486px,
+  total-width: 624px,
+  total-height: 4254px,
+  image: '../img/sprite.png'
+);
+$s-sktch-tuts: (
+  name: 's-SktchTuts',
+  x: 0px,
+  y: 0px,
+  offset-x: 0px,
+  offset-y: 0px,
+  width: 348px,
+  height: 94px,
+  total-width: 624px,
+  total-height: 4254px,
+  image: '../img/sprite.png'
+);
+$s-diamond: (
+  name: 's-diamond',
+  x: 0px,
+  y: 434px,
+  offset-x: 0px,
+  offset-y: -434px,
+  width: 160px,
+  height: 160px,
+  total-width: 624px,
+  total-height: 4254px,
+  image: '../img/sprite.png'
+);
+$s-icon-2: (
+  name: 's-icon 2',
+  x: 0px,
+  y: 604px,
+  offset-x: 0px,
+  offset-y: -604px,
+  width: 204px,
+  height: 204px,
+  total-width: 624px,
+  total-height: 4254px,
+  image: '../img/sprite.png'
+);
+$s-icon: (
+  name: 's-icon',
+  x: 0px,
+  y: 818px,
+  offset-x: 0px,
+  offset-y: -818px,
+  width: 204px,
+  height: 204px,
+  total-width: 624px,
+  total-height: 4254px,
+  image: '../img/sprite.png'
+);
+$s-icon-course1: (
+  name: 's-icon_course1',
+  x: 0px,
+  y: 324px,
+  offset-x: 0px,
+  offset-y: -324px,
+  width: 100px,
+  height: 100px,
+  total-width: 624px,
+  total-height: 4254px,
+  image: '../img/sprite.png'
+);
+$s-icon-course2: (
+  name: 's-icon_course2',
+  x: 0px,
+  y: 214px,
+  offset-x: 0px,
+  offset-y: -214px,
+  width: 100px,
+  height: 100px,
+  total-width: 624px,
+  total-height: 4254px,
+  image: '../img/sprite.png'
+);
+$s-icon-course3: (
+  name: 's-icon_course3',
+  x: 0px,
+  y: 104px,
+  offset-x: 0px,
+  offset-y: -104px,
+  width: 100px,
+  height: 100px,
+  total-width: 624px,
+  total-height: 4254px,
+  image: '../img/sprite.png'
+);
+$s-iphone: (
+  name: 's-iphone',
+  x: 0px,
+  y: 3564px,
+  offset-x: 0px,
+  offset-y: -3564px,
+  width: 500px,
+  height: 690px,
+  total-width: 624px,
+  total-height: 4254px,
+  image: '../img/sprite.png'
+);
+$s-iphone-course: (
+  name: 's-iphone_course',
+  x: 0px,
+  y: 3016px,
+  offset-x: 0px,
+  offset-y: -3016px,
+  width: 480px,
+  height: 538px,
+  total-width: 624px,
+  total-height: 4254px,
+  image: '../img/sprite.png'
+);
+$s-1-2x: (
+  name: 's-1@2x',
+  x: 0px,
+  y: 5040px,
+  offset-x: 0px,
+  offset-y: -5040px,
+  width: 1248px,
+  height: 972px,
+  total-width: 1248px,
+  total-height: 8508px,
+  image: '../img/sprite@2x.png'
+);
+$s-2-2x: (
+  name: 's-2@2x',
+  x: 0px,
+  y: 2064px,
+  offset-x: 0px,
+  offset-y: -2064px,
+  width: 1248px,
+  height: 972px,
+  total-width: 1248px,
+  total-height: 8508px,
+  image: '../img/sprite@2x.png'
+);
+$s-3-2x: (
+  name: 's-3@2x',
+  x: 0px,
+  y: 4048px,
+  offset-x: 0px,
+  offset-y: -4048px,
+  width: 1248px,
+  height: 972px,
+  total-width: 1248px,
+  total-height: 8508px,
+  image: '../img/sprite@2x.png'
+);
+$s-4-2x: (
+  name: 's-4@2x',
+  x: 0px,
+  y: 3056px,
+  offset-x: 0px,
+  offset-y: -3056px,
+  width: 1248px,
+  height: 972px,
+  total-width: 1248px,
+  total-height: 8508px,
+  image: '../img/sprite@2x.png'
+);
+$s-sktch-tuts-2x: (
+  name: 's-SktchTuts@2x',
+  x: 0px,
+  y: 0px,
+  offset-x: 0px,
+  offset-y: 0px,
+  width: 696px,
+  height: 188px,
+  total-width: 1248px,
+  total-height: 8508px,
+  image: '../img/sprite@2x.png'
+);
+$s-diamond-2x: (
+  name: 's-diamond@2x',
+  x: 0px,
+  y: 868px,
+  offset-x: 0px,
+  offset-y: -868px,
+  width: 320px,
+  height: 320px,
+  total-width: 1248px,
+  total-height: 8508px,
+  image: '../img/sprite@2x.png'
+);
+$s-icon-2-2x: (
+  name: 's-icon 2@2x',
+  x: 0px,
+  y: 1208px,
+  offset-x: 0px,
+  offset-y: -1208px,
+  width: 408px,
+  height: 408px,
+  total-width: 1248px,
+  total-height: 8508px,
+  image: '../img/sprite@2x.png'
+);
+$s-icon-2x: (
+  name: 's-icon@2x',
+  x: 0px,
+  y: 1636px,
+  offset-x: 0px,
+  offset-y: -1636px,
+  width: 408px,
+  height: 408px,
+  total-width: 1248px,
+  total-height: 8508px,
+  image: '../img/sprite@2x.png'
+);
+$s-icon-course1-2x: (
+  name: 's-icon_course1@2x',
+  x: 0px,
+  y: 648px,
+  offset-x: 0px,
+  offset-y: -648px,
+  width: 200px,
+  height: 200px,
+  total-width: 1248px,
+  total-height: 8508px,
+  image: '../img/sprite@2x.png'
+);
+$s-icon-course2-2x: (
+  name: 's-icon_course2@2x',
+  x: 0px,
+  y: 428px,
+  offset-x: 0px,
+  offset-y: -428px,
+  width: 200px,
+  height: 200px,
+  total-width: 1248px,
+  total-height: 8508px,
+  image: '../img/sprite@2x.png'
+);
+$s-icon-course3-2x: (
+  name: 's-icon_course3@2x',
+  x: 0px,
+  y: 208px,
+  offset-x: 0px,
+  offset-y: -208px,
+  width: 200px,
+  height: 200px,
+  total-width: 1248px,
+  total-height: 8508px,
+  image: '../img/sprite@2x.png'
+);
+$s-iphone-2x: (
+  name: 's-iphone@2x',
+  x: 0px,
+  y: 7128px,
+  offset-x: 0px,
+  offset-y: -7128px,
+  width: 1000px,
+  height: 1380px,
+  total-width: 1248px,
+  total-height: 8508px,
+  image: '../img/sprite@2x.png'
+);
+$s-iphone-course-2x: (
+  name: 's-iphone_course@2x',
+  x: 0px,
+  y: 6032px,
+  offset-x: 0px,
+  offset-y: -6032px,
+  width: 960px,
+  height: 1076px,
+  total-width: 1248px,
+  total-height: 8508px,
+  image: '../img/sprite@2x.png'
+);
+$spritesheet: (
+  width: 624px,
+  height: 4254px,
+  image: '../img/sprite.png',
+  sprites: ($s-1, $s-2, $s-3, $s-4, $s-sktch-tuts, $s-diamond, $s-icon-2, $s-icon, $s-icon-course1, $s-icon-course2, $s-icon-course3, $s-iphone, $s-iphone-course, )
+);
+$retina-spritesheet: (
+  width: 1248px,
+  height: 8508px,
+  image: '../img/sprite@2x.png',
+  sprites: ($s-1-2x, $s-2-2x, $s-3-2x, $s-4-2x, $s-sktch-tuts-2x, $s-diamond-2x, $s-icon-2-2x, $s-icon-2x, $s-icon-course1-2x, $s-icon-course2-2x, $s-icon-course3-2x, $s-iphone-2x, $s-iphone-course-2x, )
+);
+$s-1-group: (
+  name: 's-1',
+  normal: $s-1,
+  retina: $s-1-2x
+);
+$s-2-group: (
+  name: 's-2',
+  normal: $s-2,
+  retina: $s-2-2x
+);
+$s-3-group: (
+  name: 's-3',
+  normal: $s-3,
+  retina: $s-3-2x
+);
+$s-4-group: (
+  name: 's-4',
+  normal: $s-4,
+  retina: $s-4-2x
+);
+$s-sktch-tuts-group: (
+  name: 's-SktchTuts',
+  normal: $s-sktch-tuts,
+  retina: $s-sktch-tuts-2x
+);
+$s-diamond-group: (
+  name: 's-diamond',
+  normal: $s-diamond,
+  retina: $s-diamond-2x
+);
+$s-icon-2-group: (
+  name: 's-icon 2',
+  normal: $s-icon-2,
+  retina: $s-icon-2-2x
+);
+$s-icon-group: (
+  name: 's-icon',
+  normal: $s-icon,
+  retina: $s-icon-2x
+);
+$s-icon-course1-group: (
+  name: 's-icon_course1',
+  normal: $s-icon-course1,
+  retina: $s-icon-course1-2x
+);
+$s-icon-course2-group: (
+  name: 's-icon_course2',
+  normal: $s-icon-course2,
+  retina: $s-icon-course2-2x
+);
+$s-icon-course3-group: (
+  name: 's-icon_course3',
+  normal: $s-icon-course3,
+  retina: $s-icon-course3-2x
+);
+$s-iphone-group: (
+  name: 's-iphone',
+  normal: $s-iphone,
+  retina: $s-iphone-2x
+);
+$s-iphone-course-group: (
+  name: 's-iphone_course',
+  normal: $s-iphone-course,
+  retina: $s-iphone-course-2x
+);
+$retina-groups: ($s-1-group, $s-2-group, $s-3-group, $s-4-group, $s-sktch-tuts-group, $s-diamond-group, $s-icon-2-group, $s-icon-group, $s-icon-course1-group, $s-icon-course2-group, $s-icon-course3-group, $s-iphone-group, $s-iphone-course-group, );
+
+
+@mixin sprite-width($sprite) {
+  width: map-get($sprite, 'width');
+}
+
+@mixin sprite-height($sprite) {
+  height: map-get($sprite, 'height');
+}
+
+@mixin sprite-position($sprite) {
+  background-position: map-get($sprite, 'offset-x') map-get($sprite, 'offset-y');
+}
+
+@mixin sprite-image($sprite) {
+  background-image: url(map-get($sprite, 'image'));
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+@mixin sprites {
+  $sprites: map-get($spritesheet, 'sprites');
+  @each $sprite in $sprites {
+    $sprite-name: map-get($sprite, 'name');
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}
+
+// The `retina-sprite` mixin sets up rules and a media query for a sprite/retina sprite.
+//  It should be used with a "retina group" variable.
+
+// $icon-home-group: (
+//   name: 'icon-home',
+//   normal: $icon-home,
+//   retina: $icon-home-2x
+// );
+
+// .icon-home {
+//   @include retina-sprite($icon-home-group);
+// }
+
+@mixin sprite-background-size($sprite) {
+  background-size: map-get($sprite, 'total-width') map-get($sprite, 'total-height');
+}
+
+@mixin retina-sprite($retina-group) {
+  $normal-sprite: map-get($retina-group, 'normal');
+  $retina-sprite: map-get($retina-group, 'retina');
+  @include sprite($normal-sprite);
+
+  @media (-webkit-min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi) {
+    @include sprite-image($retina-sprite);
+    @include sprite-background-size($normal-sprite);
+  }
+}
+
+@mixin retina-sprites {
+  @each $retina-group in $retina-groups {
+    $sprite-name: map-get($retina-group, 'name');
+    .#{$sprite-name} {
+      @include retina-sprite($retina-group);
+    }
+  }
+}

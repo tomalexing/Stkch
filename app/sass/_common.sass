@@ -1,142 +1,96 @@
 body
-  font-family: 'montserrat-regular', Helvetica, Arial, sans-serif
-  font-size: 13px
-  +font-smoothing
-  background: #FFF
-  color: #FFF
+	font-family: 'OpenSans', Arial, sans-serif
+	font-size: 15px
+	+font-smoothing
+	background: grey
+	color: #FFF
 //variables
+*
+	+box
 
-
-$lang: #808080
-$textMemu: #231F20
-$red: #D71B58
-$pagination__link: #096EAF
-$grey: #4D4D4D
-$blue: #096EAF
-$grey-light: #ACACAC
+$orange: #ee931e
+$blue-light: #5dabfa
+$blue-dark: #147de7
+$menu-back: #051523
+$red: #fcead1
+$orange-light: #ffe084
+$orange-dark: #ee931e
+$footer: #383838
+%in 
+	min-width: 1170px
+	width: percentage(1170/1440)
+	margin: 0 auto
+	max-width: 1440px
 
 
 .out
-  overflow: hidden
-  color: black
+	overflow: hidden
+	color: black
 
 .h1
-  +f(pr, 50, 60)
-  line-height: 1.4
+//	+f(pr, 50, 60)
+	line-height: 1.4
 
-.h2
-  +f(b, 50, 60)
-  line-height: 1.4
-  text-transform: uppercase
+h2
+	line-height: 1.1
+	+f(l,36)
 
-.h3
-  +f(b, 25, 120)
-  text-transform: uppercase
+h3
+	+f(l,18,1)
 
 .h4
-  +f(pi, 16, 120)
-  color: #919191
-  text-transform: uppercase
+//	+f(pi, 16, 120)
+	color: #919191
+	text-transform: uppercase
 
-+r(767)
-  .h1
-    font-size: 32px
-  .h2
-    font-size: 32px
+// +r(767)
+// 	.h1
+// 		font-size: 32px
+// 	.h2
+// 		font-size: 32px
 
 .svg-icon
-  display: inline-block
-  font-size: 40px
-  svg
-    display: block
-    width: 100%
-    height: 100%
+	display: inline-block
+	svg
+		display: block
+		width: 100%
+		height: 100%
+
 
 .btn
-  display: inline-block
-  background: none
-  box-sizing: border-box
-  text-transform: uppercase
-  color: inherit
-  text-align: center
-  position: relative
-  z-index: 0
-  box-sizing: border-box
-  text-decoration: none
-  width: 240px
-  height: 70px
-  line-height: 70px
-  +f(r, 16, 250)
-  &_light
-    color: #FFF
-    .btn__border
-      > span
-        background: rgba(white, 0.4)
-        &:before
-          background: white
-  &_font-sm
-    font-size: 14px
-  &:hover
-    .btn__border
-      > span
-        &:before
-          transform: translate3d(0,0,0)
+	display: inline-block
+	background: none
+	box-sizing: border-box
+	text-transform: uppercase
+	text-align: center
+	position: relative
+	z-index: 2
+	+middle
+	background: transparent
+	margin-right: 0
+	text-decoration: none
+	overflow: hidden
+	border-radius: 100px
+	+f(semi, 16)
+	+tr(opacity .5s)
+
+	.btn__inner
+		font-size: 0
+		line-height: 0px
+		border: 3px solid transparent
+		display: inline-block
+		vertical-align: middle
+		overflow: hidden
+		& > *
+			+middle
+
+	&_font-sm
+		font-size: 14px
+	&:hover
+		opacity: .5
 
 .btn__text
-  position: relative
-  z-index: 1
+	position: relative
+	z-index: 1
 
-.btn__border
-  position: absolute
-  z-index: 0
-  top: 0
-  left: 0
-  right: 0
-  bottom: 0
-  overflow: hidden
-  > span
-    position: absolute
-    top: 0
-    left: 0
-    right: 0
-    bottom: 0
-    background: rgba(black, 0.4)
-    overflow: hidden
-    &:before
-      content: ""
-      display: block
-      background: black
-      position: absolute
-      transition: transform 0.5s ease
-      top: 0
-      left: 0
-      width: 100%
-      height: 100%
-  .top
-    height: 1px
-    bottom: auto
-    right: 1px
-  .bottom
-    height: 1px
-    top: auto
-    left: 1px
-  .left
-    top: 1px
-    width: 1px
-    right: auto
-  .right
-    width: 1px
-    left: auto
-    bottom: 1px
-  .top
-    &:before
-      transform: translate3d(-100%,0,0)
-  .bottom
-    &:before
-      transform: translate3d(100%,0,0)
-  .right
-    &:before
-      transform: translate3d(0,-100%,0)
-  .left
-    &:before
-      transform: translate3d(0,100%,0)
+

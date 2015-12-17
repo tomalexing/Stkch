@@ -1,0 +1,57 @@
+.course__block
+	z-index: 0
+	width: 100%
+	height: 760px
+	//background: $orange
+	background-image: url("../img/bg2.png")
+	background-position: 50% 50%
+	background-size: 2000px 1450px
+	.course__block-in
+		@extend %in
+		display: flex
+		height: 100%
+		flex-direction: row
+		align-items: center
+		.left
+			height: 100%
+			flex: 1
+		.upperlogo
+			display: flex
+			flex: 1
+			padding-top: 150px
+			justify-content: center
+			i
+				width: 125px
+				height: 100%
+				@include retina-sprite($s-diamond-group)
+		.icons__row
+			display: block
+			+justify
+			.course__icon
+				display: inline-block
+			.course__icon
+				i
+					@include retina-sprite($s-icon-course1-group)
+			.course__icon+ .course__icon
+				i
+					@include retina-sprite($s-icon-course2-group)
+			.course__icon+ .course__icon+ .course__icon
+				i
+					@include retina-sprite($s-icon-course3-group)
+
+
+		.title
+			padding: 25px 0 115px
+			color: #fff
+			+f(l,40)
+			text-align: center
+		.phone
+			display: flex
+			height: 100%
+			align-items: flex-end
+			flex: 1
+			i
+				display: block
+				margin: 0 auto
+				@include retina-sprite($s-iphone-course-group)
+
