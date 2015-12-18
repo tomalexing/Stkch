@@ -1,5 +1,7 @@
 export default class PageSlider {
-    constructor() {}
+    constructor() {
+        console.log('in PageSlider')
+    }
 
     static setupSlides(currentSlide, nextSlide) {
         let curent = $(currentSlide);

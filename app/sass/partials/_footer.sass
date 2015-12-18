@@ -11,6 +11,7 @@
 		text-align: center
 		height: 100%
 		margin: auto
+		align-items: center
 		> *
 			flex: 1
 			justify-content: space-around
@@ -18,10 +19,13 @@
 		p
 			+f(l,28)
 		a
+			+tr(opacity .5s)
 			svg
 				height: 70px
 				width: 230px
 				display: inline-block
+			&:hover
+				opacity: .7
 	.footer__down
 		height: 100px
 		background-color: $footer
@@ -44,7 +48,8 @@
 				vertical-align: middle
 				display: inline-block
 				margin-right: 17px
-				:hover
+				+tr(opacity .5s)
+				&:hover
 					opacity: .5
 			svg
 				display: block

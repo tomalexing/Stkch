@@ -1,7 +1,17 @@
-<div class="video__block" >
+<div class="video__block" name="sample">
   <div class="video__block-in" >
+      
       <img src="img/video@1x.png" srcset="img/video@1x.png 1000w, img/video@2x.png 2000w" alt="yah">
-      <div id="player"></div>
-      <div id="play">{{mixins.btnLink('Пример урока', 'btn_orange', false ,'play')}}</div>
+
+      <div class="modal">
+        <div class="modal__inner">
+          <div class="modal__body">
+            <button class="modal__close" type="button"><span class="hidden-text">Закрыть</span></button>
+            <div class="modal__player" id="player" data-video-id="xEhaVhta7sI" frameborder="0" allowfullscreen="1" ></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="play">{{mixins.btnLink('Пример урока', 'btn_orange', '#play' ,'play')}}</div>
   </div>
 </div>

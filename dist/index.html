@@ -49,10 +49,10 @@
             </div>
             <div class="heeder__nav">
               <ul class="nav">
-                <li class="nav__item"><a href="#">О нас</a></li>
-                <li class="nav__item"><a href="#">Как это работает</a></li>
-                <li class="nav__item"><a href="#">Пример урока</a></li>
-                <li class="nav__item"><a href="#">Курсы</a></li>
+                <li class="nav__item"><a href="#about">О нас</a></li>
+                <li class="nav__item"><a href="#hdiw">Как это работает</a></li>
+                <li class="nav__item"><a href="#sample">Пример урока</a></li>
+                <li class="nav__item"><a href="#course">Курсы</a></li>
               </ul>
             </div>
 
@@ -74,7 +74,7 @@
       </div>
       <!-- end header -->
       <!-- BEGIN intro -->
-      <div class="intro">
+      <div class="intro" name="about">
         <div class="intro__in ">
           <div class="hand"><i></i></div>
           <div class="content">
@@ -90,12 +90,12 @@
               </a>
             </div>
           </div>
-          <div class="anchor-down"></div>
         </div>
+        <div class="anchor-down"><i></i></div>
       </div>
       <!-- END intro -->
 
-      <div class="slider__block">
+      <div class="slider__block" name="hdiw">
         <div class="slider__block-in">
           <div class="slider-box__container">
             <div class="slider-box__container-inner">
@@ -116,12 +116,22 @@
 
         </div>
       </div>
-      <div class="video__block">
+      <div class="video__block" name="sample">
         <div class="video__block-in">
+
           <img src="img/video@1x.png" srcset="img/video@1x.png 1000w, img/video@2x.png 2000w" alt="yah">
-          <div id="player"></div>
+
+          <div class="modal">
+            <div class="modal__inner">
+              <div class="modal__body">
+                <button class="modal__close" type="button"><span class="hidden-text">Закрыть</span></button>
+                <div class="modal__player" id="player" data-video-id="xEhaVhta7sI" frameborder="0" allowfullscreen="1"></div>
+              </div>
+            </div>
+          </div>
+
           <div id="play">
-            <a href="#" class="btn btn_orange">
+            <a href="#play" class="btn btn_orange">
               <span class="btn__inner">
   
 <svg class="svg-icon svg-play">
@@ -136,16 +146,16 @@
           </div>
         </div>
       </div>
-      <div class="course__block">
+      <div class="course__block" name="course">
         <div class="course__block-in">
           <div class="left">
             <div class="upperlogo"><i></i></div>
             <div class="title">
               <h2>Выберите свой курс</h2></div>
             <div class="icons__row">
-              <div class="course__icon"><i></i></div>
-              <div class="course__icon"><i></i></div>
-              <div class="course__icon"><i></i></div>
+              <div class="course__icon"><i></i><span>ОБЗОРНЫЙ </span><span>	КУРС</span></div>
+              <div class="course__icon"><i></i><span>WEB</span></div>
+              <div class="course__icon"><i></i><span>IOS</span></div>
             </div>
           </div>
           <div class="phone"><i></i></div>

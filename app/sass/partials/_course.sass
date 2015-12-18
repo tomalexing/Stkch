@@ -18,7 +18,7 @@
 		.upperlogo
 			display: flex
 			flex: 1
-			padding-top: 150px
+			padding-top: 130px
 			justify-content: center
 			i
 				width: 125px
@@ -29,13 +29,26 @@
 			+justify
 			.course__icon
 				display: inline-block
+				text-align: center
+				vertical-align: top
 			.course__icon
+				margin: 0 10px 0 40px
 				i
+					display: block
 					@include retina-sprite($s-icon-course1-group)
+				span
+					display: flex
+					justify-content: center
+					max-width: 100px
+					+f(l,20,.6)
+					color: #fff
+					line-height: 25px
 			.course__icon+ .course__icon
+				margin: 0
 				i
 					@include retina-sprite($s-icon-course2-group)
 			.course__icon+ .course__icon+ .course__icon
+				margin: 0 40px 0 10px
 				i
 					@include retina-sprite($s-icon-course3-group)
 
