@@ -1,59 +1,85 @@
 .intro
-	z-index: 0
-	height: 759px
+	z-index: 1
+	height: 100vh
 	background: $orange
 	background-image: url("../img/bg1.png")
 	background-position: 50% 50%
 	background-size: 2000px 1123px
 	width: 100%
 	position: relative
+	overflow: hidden
 
 .intro__in
 	position: relative
 	color: white
+	height: 100%
 	padding: 70px
+	padding-bottom: 0
+	display: block
+	overflow: hidden
+	font-size: 0px
+	+r(768)
+		padding: 0px
 	@extend %in
 	.hand
 		width: 50%
-		float: left
 		min-height: auto
-		i
+		height: 100%
+		display: inline-block
+		vertical-align: middle
+		img
 			display: block
-			@include retina-sprite($s-iphone-group)
-			margin: 0 auto
+			margin: auto 0 auto !important
+			height: 100%
+			width: auto
+		+r(768)
+			display: none
 
 	.content
 		width: 50%
-		float: left
-		min-height: auto
+		height: 100%
+		display: inline-block
+		vertical-align: middle
+		+r(768)
+			display: flex
+			flex-direction: column
+			justify-content: center
+			width: 100%
+
 	.diamond
 		width: 100%
-		padding-top: 90px
-
-		i
+		padding-top: 70px
+		+rmin(1500)
+			padding-top: 90px
+		img
 			display: block
-			@include retina-sprite($s-icon-group)
+			width: 204px
+			height: auto
 			margin: 0 auto
-
+			+r(320)
+				width: 114px
+		+r(768)
+			padding-top: 0px
 	.sktch
 		width: 100%
-		i
+		+rmin(1500)
+			margin-top: 20px
+		img
 			display: block
 			margin: 0 auto
-			@include retina-sprite($s-sktch-tuts-group)
-		width: 100%
-	.expresion
+			width: 348px
+			height: auto
+			+r(320)
+				width: 300px 
 
+	.expresion
+		font-size: 18px
 		width: 72%
 		text-align: center
 		margin: 0 auto
-	.sub
-		width: 72%
-		text-align: center
-		margin: 0 auto
-		padding-top: 65px
-		padding-bottom: 10px
-		font-size: 12px
+		margin-bottom: 30px
+		+rmin(1500)
+			margin-top: 20px
 	.appstore-cover
 		width: 100%
 		text-align: center

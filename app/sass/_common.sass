@@ -22,10 +22,11 @@ $color-dark: #383838
 
 
 %in
-	min-width: 1170px
-	width: percentage(1170/1440)
+	width: 1170px
 	margin: 0 auto
-	max-width: 1440px
+	max-width: 1170px
+	+r(768)
+		width: 100%
 
 
 .out
@@ -70,6 +71,7 @@ h3
 	border-radius: 100px
 	+f(semi, 16)
 	+tr(opacity .5s)
+	font-size: 0
 
 	.btn__inner
 		font-size: 0
@@ -81,7 +83,7 @@ h3
 		& > *
 			+middle
 	&:hover
-		opacity: .7
+		opacity: .8
 
 .btn__text
 	position: relative

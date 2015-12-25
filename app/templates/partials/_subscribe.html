@@ -3,9 +3,11 @@
   	<div class="title">
   		<h2>Подпишись на рассылку и будь в курсе последних новостей</h2>
   	</div>
-  	<div class="input__field">
-  		 <form post= "/" role="form" id="formOrder" autocomplete="on">
-  			<input type="email" maxlength="60" title="Enter your email" name="email" placeholder="Email" required>
+  	<div class="input__block">
+  		 <form action= "callback.php" role="form" id="formOrder" autocomplete="on" method="post">
+         <div class="input__field">
+    			<input  title="Enter your email" name="email" placeholder="Email" class="requiredField email">
+         </div>
   			<button type="submit" class="start__submit">{{mixins.svgicon('subscribe')}}</button>
   		</form>
   	</div>

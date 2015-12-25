@@ -9,6 +9,8 @@
     <meta name="theme-color" content="#fff">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" media="all" href="css/app.css">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="./fav.ico">
+    <link rel="shortcut icon" type="image/png" href="./fav.ico" />
 
     <meta name="description" content="">
     <!-- Twitter Card data -->
@@ -48,9 +50,10 @@
               </a>
             </div>
             <div class="heeder__nav">
+              <span class="mobile__menu"><i></i></span>
               <ul class="nav">
-                <li class="nav__item"><a href="#about">О нас</a></li>
-                <li class="nav__item"><a href="#hdiw">Как это работает</a></li>
+                <li class="nav__item"><a href="#about">Главная</a></li>
+                <li class="nav__item"><a href="#hdiw">Процесс</a></li>
                 <li class="nav__item"><a href="#sample">Пример урока</a></li>
                 <li class="nav__item"><a href="#course">Курсы</a></li>
               </ul>
@@ -76,12 +79,13 @@
       <!-- BEGIN intro -->
       <div class="intro" name="about">
         <div class="intro__in ">
-          <div class="hand"><i></i></div>
+          <div class="hand">
+            <img src="img/iphone@1x.png" srcset="img/iphone@1x.png 800w, img/iphone@2x.png 1600w, img/iphone@3x.png 2400w" alt="yah">
+          </div>
           <div class="content">
-            <div class="diamond"><i></i></div>
-            <div class="sktch"><i></i></div>
-            <div class="expresion">Обучающая программа видеоуроков по графическому редактору SketchApp 3*</div>
-            <div class="sub">* доступно только для IOS девайсов</div>
+            <div class="diamond"><img src="img/icon@1x.png" srcset="img/icon@1x.png 204w, img/icon@2x.png 408w" alt="yah"></div>
+            <div class="sktch"><img src="img/SktchTuts@1x.png" srcset="img/SktchTuts@1x.png 348w, img/SktchTuts@2x.png 696w" alt="yah"></div>
+            <div class="expresion">Обучающая программа видеоуроков по графическому редактору SketchApp 3</div>
             <div class="appstore-cover">
               <a href="#">
                 <svg class="svg-icon svg-appstore">
@@ -111,12 +115,13 @@
 
           <div class="block-text">
             <h2 class="block__title">Создано дизайнерами<br/>для дизайнеров </h2>
-            <h3 class="block__expresion">Обучающая программа видеоуроков по графическому редактору SketchApp 3 была разработана профессионалами в сфере проектирования интерфейсов. Зная как важно облачить информацию в приемлемый для дизайнеров вид, мы старались делать видеоуроки качественно, с полной самоотдачей.</h3>
+            <h3 class="block__expresion">Обучающая программа видеоуроков по графическому редактору SketchApp 3 была разработана профессионалами в сфере проектирования интерфейсов. Зная как важно облачить информацию в приемлемый для дизайнеров вид, мы старались делать видеоуроки качественно: процесс создания состоял из множества этапов. Мы четко понимаем, что качественный контент – это сложная работа, требующая внимания к деталям.</h3>
           </div>
 
         </div>
       </div>
       <div class="video__block" name="sample">
+        <div class="grad"></div>
         <div class="video__block-in">
 
           <img src="img/video@1x.png" srcset="img/video@1x.png 1000w, img/video@2x.png 2000w" alt="yah">
@@ -139,7 +144,7 @@
 </svg>
 
   
-<span class="btn__text">Пример урока</span>
+<span class="btn__text">Вступительный урок</span>
 
               </span>
             </a>
@@ -166,9 +171,11 @@
           <div class="title">
             <h2>Подпишись на рассылку и будь в курсе последних новостей</h2>
           </div>
-          <div class="input__field">
-            <form post="/" role="form" id="formOrder" autocomplete="on">
-              <input type="email" maxlength="60" title="Enter your email" name="email" placeholder="Email" required>
+          <div class="input__block">
+            <form action="callback.php" role="form" id="formOrder" autocomplete="on" method="post">
+              <div class="input__field">
+                <input title="Enter your email" name="email" placeholder="Email" class="requiredField email">
+              </div>
               <button type="submit" class="start__submit">
                 <svg class="svg-icon svg-subscribe">
                   <use xlink:href="img/sprite.svg#svg-subscribe"></use>

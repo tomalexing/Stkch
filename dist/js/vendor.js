@@ -3,6 +3,7 @@
  global.$ = global.jQuery = require('jquery');
  global.svg4everybody = require('../lib/svg4everybody/dist/svg4everybody.min.js');
  svg4everybody();
+
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 },{"../lib/svg4everybody/dist/svg4everybody.min.js":2,"jquery":3}],2:[function(require,module,exports){
 !function(a,b){"function"==typeof define&&define.amd?define([],function(){return a.svg4everybody=b()}):"object"==typeof exports?module.exports=b():a.svg4everybody=b()}(this,function(){/*! svg4everybody v2.0.0 | github.com/jonathantneal/svg4everybody */
