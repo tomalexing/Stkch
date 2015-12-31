@@ -4,10 +4,11 @@ scrollController = new scrollmagic.Controller
   container: 'body'
   loglevel: 2
 
-module.exports =
+module.exports = {
   addScene: (props) ->
     scene = new scrollmagic.Scene(props)
     scrollController.addScene scene
     return scene
-
+  controller: scrollController
+  }
 

@@ -8,7 +8,7 @@
 	width: 100%
 	position: relative
 	overflow: hidden
-
+	min-height: 600px
 .intro__in
 	position: relative
 	color: white
@@ -37,20 +37,19 @@
 
 	.content
 		width: 50%
-		height: 100%
-		display: inline-block
+		margin-top: -70px
+		display: inline-flex
 		vertical-align: middle
+		flex-direction: column
 		+r(768)
+			margin-top: 0px
 			display: flex
-			flex-direction: column
 			justify-content: center
 			width: 100%
+			height: 100%
 
 	.diamond
 		width: 100%
-		padding-top: 70px
-		+rmin(1500)
-			padding-top: 90px
 		img
 			display: block
 			width: 204px
@@ -60,6 +59,8 @@
 				width: 114px
 		+r(768)
 			padding-top: 0px
+		+r(320)
+			padding-top: 40px
 	.sktch
 		width: 100%
 		+rmin(1500)
@@ -70,7 +71,7 @@
 			width: 348px
 			height: auto
 			+r(320)
-				width: 300px 
+				width: 300px
 
 	.expresion
 		font-size: 18px
@@ -95,6 +96,8 @@
 	left: 50%
 	transform: translate(-50%, 0)
 	cursor: pointer
+	+r(480)
+		bottom: 25px
 	&:hover
 		opacity: .5
 

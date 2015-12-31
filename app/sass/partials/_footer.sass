@@ -5,41 +5,66 @@
 		height: 224px
 		background: #fff radial-gradient(circle at 50% 50% ,white 15%,$red 15.8%,white 15%,white 30%,$red 30.8%,white 30%,white 45%,$red 45.8%,white 45%,white 60%,$red 60.8%,white 60%)
 	.footer__learn-in
-		min-width: 943px
+
 		width: percentage(943/1440)
 		display: flex
 		text-align: center
 		height: 100%
 		margin: auto
 		align-items: center
+		+r(1024)
+			width: 100%
+		+r(768)
+			flex-direction: column
 		> *
 			flex: 1
 			justify-content: space-around
 			margin: auto
+		p:first-child
+			padding-top: 20px
 		p
 			+f(l,28)
+			+r(768)
+				flex: 0 1 52px
 		a
 			+tr(opacity .5s)
+			line-height: 100px
 			svg
 				height: 70px
 				width: 230px
 				display: inline-block
+				vertical-align: middle
 			&:hover
 				opacity: .7
+			+r(768)
+				order: 2
 	.footer__down
 		height: 100px
 		background-color: $footer
 		.footer__down-in
 			@extend %in
+			+r(768)
+				display: flex
+				flex-direction: column
+				height: 100px
+				justify-content: center
+				text-align: center
 		.copyright
 			float: left
 			+line-height(100)
 			+middle
 			color: #fff
+			+r(768)
+				order: 2
+				float: none
+				+line-height(30)
 		.socials
 			float: right
 			+line-height(100)
 			+vertical
+			+r(768)
+				float: none
+				+line-height(50)
 			> *
 				width: 40px
 				height: 40px

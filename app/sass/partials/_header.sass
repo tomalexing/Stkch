@@ -12,12 +12,16 @@
 		position: fixed
 		background: $menu-back
 		top: 0px
-	.is-menu-open &
+		height: 60px
+	.is-menu-fixed &
 		background: $menu-back
 		position: fixed
 		top: 0
 		left: 0
 		right: 0
+	.fixfixed &
+		position: absolute
+
 
 
 	.header__inner
@@ -27,6 +31,9 @@
 		height: 100%
 		text-align: right
 		text-align: center
+		+r(768)
+			.active-menu &
+				overflow: auto
 		+rmin(769)
 			+vertical
 			text-align: right
@@ -37,10 +44,11 @@
 		margin-left: 35px
 		+tr(transform .5)
 		transform: translate(100px, 0px)
-		.is-menu-open &
+		.is-menu-fixed &
 			transform: translate(0px, 0px)
 		+r(768)
 			transform: translate(0px, 0px)
+			margin-top: 17px
 		.svg-ionlogo
 			width: 44px
 			height: 26px
@@ -96,7 +104,7 @@
 					position: absolute
 					left: 0
 					background-color: #fff
-					+tr(transform .1s linear top .1s linear)
+					+tr(all .1s linear)
 					box-shadow: 0px 0px 1px .5px white
 				&:before
 					top: -8px
@@ -111,7 +119,8 @@
 			transform: translate(0, 0)
 			clear: left
 			display: block
-		.is-menu-open &
+			padding-top: 30px
+		.is-menu-fixed &
 			transform: translate(0, 0)
 		.nav
 			+r(768)
@@ -155,6 +164,7 @@
 			visibility: visible
 			+translate(0, 0)
 			margin-top: 50px
+			margin-bottom: 50px
 		.svg-download
 			width: 28px
 			height: 40px
@@ -164,7 +174,7 @@
 			padding: 0 20px 0 0
 			font-size: 16px
 			color: #fff
-		.is-menu-open &
+		.is-menu-fixed &
 			visibility: visible
 			+translate(0, 0)
 			//margin-right: 25px

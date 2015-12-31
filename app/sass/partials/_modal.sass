@@ -6,11 +6,12 @@
 	left: 50.5%
 	bottom: 0
 	width: 868px
-	height: 473px
+	height: 500px
 	transform: translate(-50%, 0)
 	overflow: hidden
-
-
+	+r(768)
+		width: 100%
+		left: 50%
 	&.is-open
 		display: block
 		.modal__inner

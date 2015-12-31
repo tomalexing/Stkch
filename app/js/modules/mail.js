@@ -13,14 +13,14 @@ export  function mail(form) {
 	                dataType: "html",
 	                success: function( data, textStatus, jQxhr ) {
 	                	$("form#" + $self.attr("id")+" input").val("") ;
-						$(".subscribe__block-in .title h2").text("Спасибо!").hide().fadeIn(500);
+						$(".subscribe__block-in .title").html(" <h2 style='font-size: 36px !important'>  Спасибо! </h2>").hide().fadeIn(500);
 						$(".input__block form").detach();
-						$(".below p").hide();
+						$(".below ").hide();
 						setTimeout( function() {
 							$(".input__block").append('<p class="sended"> <svg class="svg-icon svg-sended}"> <use xlink:href="img/sprite.svg#svg-sended"></use> </svg> </p>').hide().fadeIn(500);
 						}, 500);
 						setTimeout( function() {
-							$(".below p").text("here is the text, that doesn't matter for anybody!").hide().fadeIn(500);
+							$(".below ").html("<p style='padding-top: 75px'> Теперь вы будете получать свежие новости на почту</p>").hide().fadeIn(500);
 						},1000);
 	            	}
 	            });

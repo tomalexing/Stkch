@@ -6,20 +6,28 @@
 	background-image: url("../img/bg2.png")
 	background-position: 50% 50%
 	background-size: 2000px 1450px
+	+r(768)
+		height: auto
 	.course__block-in
 		@extend %in
 		display: flex
 		height: 100%
 		flex-direction: row
 		align-items: center
+		+r(768)
+			flex-direction: column
 		.left
 			height: 100%
 			flex: 1
+			+r(768)
+				width: 77%
 		.upperlogo
 			display: flex
 			flex: 1
 			padding-top: 130px
 			justify-content: center
+			+r(768)
+				padding-top: 30px
 			i
 				width: 125px
 				height: 100%
@@ -33,6 +41,8 @@
 				vertical-align: top
 			.course__icon
 				margin: 0 10px 0 40px
+				+r(768)
+					margin: 0 0px 25px 0px
 				i
 					display: block
 					@include retina-sprite($s-icon-course1-group)
@@ -51,6 +61,8 @@
 					@include retina-sprite($s-icon-course2-group)
 			.course__icon+ .course__icon+ .course__icon
 				margin: 0 40px 0 10px
+				+r(768)
+					margin: 0 0px 25px 0px
 				i
 					@include retina-sprite($s-icon-course3-group)
 
@@ -60,13 +72,14 @@
 			color: #fff
 			+f(l,40)
 			text-align: center
+			+r(768)
+				padding: 25px 0 45px
 		.phone
 			display: flex
 			height: 100%
 			align-items: flex-end
 			flex: 1
-			i
-				display: block
-				margin: 0 auto
-				@include retina-sprite($s-iphone-course-group)
-
+			img
+				width: 480px
+				+r(768)
+					width: 300px

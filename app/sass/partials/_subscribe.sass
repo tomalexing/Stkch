@@ -6,13 +6,15 @@
 	.subscribe__block-in
 		@extend %in
 		.title
-			padding-top: 70px
-			padding-bottom: 70px
+			padding-top: 80px
+			padding-bottom: 50px
 			width: 600px
 			margin: 0 auto
 			text-align: center
 			+f(l,36,1)
 			color: #fff
+			+r(768)
+				width: 90%
 		.input__block
 			max-width: 750px
 			width: percentage(750/1170)
@@ -20,14 +22,17 @@
 			margin: 0 auto
 			text-align: center
 			position: relative
+			+r(768)
+				width: 90%
 			.sended
 				width: 100%
 				text-align: center
-				height: 130px
+				height: 143px
 				svg
-					height: 5em
-					width: 5em
+					height: 11em
+					width: 11em
 			form
+				display: flex
 				height: 100%
 				width: 100%
 				border-radius: 14px
@@ -40,14 +45,15 @@
 				max-width: 680px
 				width: 90%
 				height: 100%
-				display: inline-block
-				float: left
+				display: inline-flex
+				flex: 1
 				input
 					max-width: 680px
 					width: 100%
 					height: 100%
 					padding: 20px
 					+f(l,24,.7)
+					appearance: none
 					+placeholder-focus
 						color: #DACECE
 				.field-error
@@ -62,6 +68,7 @@
 				width:  50px
 				height: 100%
 				background: #fff
+				display: inline-flex
 				svg
 					height: 100%
 					width: 50px
@@ -73,3 +80,9 @@
 			+f(l,18,.6)
 			color: #fff
 			text-align: center
+			+r(768)
+				width: 350px
+				margin: 0 auto
+			+r(480)
+				width: 250px
+

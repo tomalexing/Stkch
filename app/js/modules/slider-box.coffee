@@ -1,7 +1,6 @@
 # $       = require 'jquery'
 SM      = require './scroll-controller'
 
-
 class SliderBox
   defaults =
     wrapper: '.slider__block'
@@ -24,9 +23,20 @@ class SliderBox
     @heightSlide = @sliderItem.outerHeight()
     @whichSlide  = 1
     @prevSlide   = 0
+    @myScroll = new IScroll 'body ',
+      scrollX: false
+      scrollY: true
+      scrollbars: false
+      probeType: 3
+      click: false
+      "onScroll":  ->
+        console.log SM.controller
+        SM.controller.update()
+
     do @_initSlider
     do @initSimpleScene
 
+    return @
 
   makeFade: ->
     if (@whichSlide - @prevSlide) isnt 0
@@ -39,33 +49,17 @@ class SliderBox
     @prevSlide = @whichSlide
 
   scrollSlider: (progress) ->
-    if progress > 0 && progress < .3
-      @whichSlide = 1
-      do @makeFade
-      setTimeout =>
-        @sliderTrack.css
-          '-webkit-transform': 'translate(0,0)'
-          'transform': 'translate(0,0)'
-      , 250
+    for i in [1 ... @count+1]
+      if progress > ((i-1) / @count) && progress < ((i) / @count)
+        @whichSlide = i
+        do @makeFade
+        do (i) =>
+          setTimeout =>
+            @sliderTrack.css
+              '-webkit-transform': 'translate(0,'+ (-(i-1))*@heightSlide+'px)'
+              'transform': 'translate(0,'+ (-(i-1))*@heightSlide+'px)'
+          , 250
 
-    if progress > .3 && progress < .6
-      @whichSlide = 2
-      do @makeFade
-      setTimeout =>
-        @sliderTrack.css
-          '-webkit-transform': 'translate(0,'+ (-1)*@heightSlide+'px)'
-          'transform': 'translate(0,'+ (-1)*@heightSlide+'px)'
-      , 250
-
-    if progress > .6
-      @whichSlide = 3
-      do @makeFade
-      setTimeout =>
-        @sliderTrack.css
-          '-webkit-transform': 'translate(0,'+ (-1)*@heightSlide+'px)'
-          'transform': 'translate(0,'+ (-2)*@heightSlide+'px)'
-      , 250
-      
   makeFixed: ->
     @el.css
       position: 'fixed'
@@ -99,15 +93,17 @@ class SliderBox
 
 
 
-
   _initSlider: ->
     wrapperHeight = @wrapper.outerHeight()
     paddingBottom =  (@count+1)*@heightSlide
+
     @wrapper.css
       height: wrapperHeight
       boxSizing: 'content-box'
       paddingBottom: paddingBottom
-    @duration = (@count+1)*@heightSlide + 815
+    @duration = (@count+2)*@heightSlide
+
+
 
 
 module.exports = SliderBox

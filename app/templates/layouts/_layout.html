@@ -4,11 +4,14 @@
   <head>
     {% include "_head.html" %}
     {% include "_media-tags.html" %} 
+    <script type="text/javascript" src="js/iscroll.js"></script>
+    <script type="text/javascript" src="js/iscroll-probe.js"></script>
+    <script type="text/javascript" src="js/TweenMax.min.js"></script>
   </head>
   <body>
 
     <!-- BEGIN content -->
-    <div class="out">
+    <div id="wr" class="out">
       {% block content %}{% endblock %}
     </div>
     <!-- END content -->
